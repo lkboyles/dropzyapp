@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Link + Chain</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="nav-bar">
+
+          <div class="dropdown">
+             <button class="dropbtn"><img class="list-icon" alt="list icon" src="images/list.svg"></button>
+             <div class="dropdown-content">
+               <a class="selected" href="index.html">Home</a>
+               <a href="products.html">Products</a>
+               <a href="about.html">About Us</a>
+               <a href="contact.html">Contact</a>
+             </div>
+            </div>
+            <ul>
+              <li class="selected">
+                <a href="index.html">
+                 Home
+                 </a>
+              </li>
+              <li>
+                  <a href="products.html">
+                  Products
+                  </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+        </header>
+        <div class="header-filler">
+
+        </div>
+        <section class="welcome-area">
+            <div class="welcome-area-content">
+                <h1><img src="images/linkchainlogo.png"</h1>
+                <p> - Vintage Bicycle Co. -</p>
+            </div>
+        </section>
+        <section class="description-area">
+            <div class="description-area-content">
+                <div class="left">
+                    <div class="icon-left">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <g>
+                                <path d="M16,1L2,15l3,3v13h22V18l3-3L16,1z M25,29H7V16l9-9l9,9V29z"/>
+                                <circle cx="16" cy="16" r="2"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Link + Chain is a vintage bicycle store selling original vintage bicycles and accessories, as well as a repair shop. Shop online or visit us in store today.
+                    </p><br>
+                </div>
+                <article class="signup-form">
+                <form name="signupform">
+                  <p>Be the first to hear about promotional offers </p>
+        <input name="email" type="text" class="inputs" id="email_address"
+ value="enter your email address" size="35" maxlength="255"><br>
+<button name="button" type="button" value="Submit" onClick="checkEmail(document.signupform.email.value)">Submit</button>
+</form>
+</article>
+                <script src="scripts/validation.js"></script>
+</html>

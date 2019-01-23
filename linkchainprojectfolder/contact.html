@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Link + Chain</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="nav-bar">
+          <div class="dropdown">
+             <button class="dropbtn"><img class="list-icon" src="images/list.svg" alt="list icon"></button>
+             <div class="dropdown-content">
+               <a href="index.html">Home</a>
+               <a href="products.html">Products</a>
+               <a href="about.html">About Us</a>
+               <a class="selected" href="contact.html">Contact</a>
+             </div>
+            </div>
+            <ul>
+              <li >
+                <a href="index.html">
+                 Home
+                 </a>
+              </li>
+              <li >
+                  <a href="products.html">
+                  Products
+                  </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li class="selected">
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+        </header>
+        <div class="header-filler">
+        </div>
+        <section class="contact-area">
+            <!-- Reference: http://www.w3schools.com/html/html_forms.asp -->
+             <div class="contact-area-content">
+                <h1>Contact</h1>
+            <aside class="contact-bar">
+                <b>Link + Chain</b>
+                <p>1234 Bachelors Walk, Dublin 1</p>
+                <p>T: +353 (0)1 123 4456</p>
+                <p>E: info@linkandchain.ie</p>
+
+                <i>Hey!</i>
+                <p>Got a question or concern? Feel free to call, drop us a message, or send an e-mail.</p>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social-icon" src="images/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img class="social-icon" src="images/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img class="social-icon" src="images/twitter.svg" alt="twitter">
+                </a>
+            </aside>
+            <article class="contact-form">
+              <form name="signupform">
+                <label>Name:</label>
+                <input name="name" type="text" class="inputs" id="name"><br><br>
+                <label>E-mail:</label>
+                <input name="email" type="text" class="inputs" id="email_address"><br><br>
+                <label>Phone:</label>
+                <input name="phone" type="text" class="inputs" id="phone"<br><br>
+                <label>Message:</label>
+                <input name="message" type="text" class="inputs" id="message"><br><br>
+                <button name="button" type="button" value="Submit" onClick="validateForm()">Submit</button>
+              </form>
+            </article>
+            </div>
+        </section>
+<script src="scripts/validation.js"></script>
+    </body>
+</html>

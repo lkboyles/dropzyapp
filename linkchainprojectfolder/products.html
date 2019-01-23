@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Link + Chain</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="nav-bar">
+          <div class=cart>
+          <p id="buttonOneCountText"><img src="images/cart.png"></p>
+         </div>
+          <div class="dropdown">
+             <button class="dropbtn"><img class="list-icon" alt="list icon" src="images/list.svg"></button>
+             <div class="dropdown-content">
+               <a href="index.html">Home</a>
+               <a class="selected" href="products.html">Products</a>
+               <a href="about.html">About Us</a>
+               <a href="contact.html">Contact</a>
+             </div>
+            </div>
+            <ul>
+              <li >
+                <a href="index.html">
+                 Home
+                 </a>
+              </li>
+              <li class="selected">
+                  <a href="products.html">
+                  Products
+                  </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+        </header>
+
+        <div class="header-filler">
+        </div>
+        <section class="product-section">
+          <h1> Products </h1>
+          <div class="picture">
+            <b>1991 Merida</b>
+            <img src="images/bike1.jpg" alt="list icon">
+            <script>
+                var buttonOneCount = 0;
+            </script>
+            <script>
+              var bike1 = [];
+
+              bike1[0] = "1991 Merida";
+              bike1[1] = "€2000";
+              bike1[2] = "Good Condition";
+
+              document.write(bike1[1], "<br>");
+              document.write(bike1[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          <div class="picture">
+            <b>2000 Gearworks</b>
+            <img src="images/bike2.jpg" alt="list icon">
+            <script>
+              var bike2 = [];
+
+              bike2[0] = "1991 Merida";
+              bike2[1] = "€2003";
+              bike2[2] = "Fair Condition";
+
+              document.write(bike1[1], "<br>");
+              document.write(bike1[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>1987 Gearworks</b>
+            <img src="images/bike3.jpg" alt="list icon">
+            <script>
+              var bike3 = [];
+
+              bike3[0] = "1991 Merida";
+              bike3[1] = "€2000";
+              bike3[2] = "Good Condition";
+
+              document.write(bike1[1], "<br>");
+              document.write(bike1[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>1960 Champion</b>
+            <img src="images/bike4.jpg" alt="list icon">
+            <script>
+              var bike4 = [];
+
+              bike4[0] = "1991 Merida";
+              bike4[1] = "€7000";
+              bike4[2] = "Good Condition";
+
+              document.write(bike4[1], "<br>");
+              document.write(bike4[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>1960 Meridian</b>
+            <img src="images/bike5.jpg" alt="list icon">
+            <script>
+              var bike5 = [];
+
+              bike5[0] = "1991 Merida";
+              bike5[1] = "€2000";
+              bike5[2] = "Good Condition";
+
+              document.write(bike5[1], "<br>");
+              document.write(bike5[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>2000 BikeMaster</b>
+            <img src="images/bike6.jpg" alt="list icon">
+            <script>
+              var bike6 = [];
+
+              bike6[0] = "1991 Merida";
+              bike6[1] = "€500";
+              bike6[2] = "Poor Condition";
+
+              document.write(bike6[1], "<br>");
+              document.write(bike6[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          <div class="picture">
+            <b>2000 Merida</b>
+            <img src="images/bike7.jpg" alt="list icon">
+            <script>
+              var bike7 = [];
+
+              bike7[0] = "1991 Merida";
+              bike7[1] = "€2000";
+              bike7[2] = "Good Condition";
+
+              document.write(bike7[1], "<br>");
+              document.write(bike7[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>1980 Cyclone</b>
+            <img src="images/bike8.jpg" alt="list icon">
+            <script>
+              var bike8 = [];
+
+              bike8[0] = "1960 Cyclybob";
+              bike8[1] = "€1000";
+              bike8[2] = "Excellent Condition";
+
+              document.write(bike8[1], "<br>");
+              document.write(bike8[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+          <div class="picture">
+            <b>1970 Gearworks</b>
+            <img src="images/bike9.jpg" alt="list icon">
+            <script>
+              var bike9 = [];
+
+              bike9[0] = "1940 Merida";
+              bike9[1] = "€200";
+              bike9[2] = "Fair Condition";
+
+              document.write(bike9[1], "<br>");
+              document.write(bike9[2]);
+            </script>
+            <form>
+                <button type="button" value="Add to Cart" onclick="buttonCart(this)">Add to Cart</button>
+            </form>
+            <p id="myOutputText"></p>
+          </div>
+          </div>
+        </section>
+    </body>
+    <script src="scripts/arrays.js"></script>
+    <script src="scripts/handlerFunctions.js"></script>
+</html>

@@ -1,0 +1,340 @@
+html{
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body {
+    margin:0;
+    font-size: 16px;
+}
+h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 61px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 61px;
+}
+p {
+    font-weight: 300;
+    font-size: 16px;
+}
+label {
+    font-size: 16px;
+    display: inherit;
+    margin-bottom: 6px;
+}
+button {
+    padding: 10px;
+    background: #8B9B4E;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul {
+  list-style-type:circle;
+}
+
+.nav-bar {
+    position:fixed;
+    z-index: 1000;
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+    padding: 0;
+    background: #8B9B4E;
+}
+
+.header-filler {
+    height: 70px;
+    width:100%;
+}
+
+.list-icon {
+  cursor: pointer;
+
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar ul li {
+    float: left;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+}
+.nav-bar ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+/* Dropdown Button Reference: W3 Schools http://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropbtn {
+   height: 70px;
+   border: none;
+   cursor: pointer;
+}
+.dropbtn img {
+  width: 50px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+}
+/*Reference: Mozilla - https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
+@media (max-width: 600px) {
+  .nav-bar ul li {
+    display: none;
+  }
+  .icon-left {
+    display: none;
+  }
+  .description {
+    width: 100%!important;
+  }
+  .welcome-area-content {
+    top: 20px;
+  }
+  .welcome-area-content h1 {
+    width: auto!important;
+  }
+  .about-description {
+    width: auto !important;
+  }
+  .map {
+    float: inherit!important;
+    width: 100%!important;
+  }
+  input {
+    width: 260px !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .dropbtn {
+    display: none;
+  }
+}
+.map iframe {
+  width: 100%;
+  height: 100vh;
+}
+.selected {
+    font-weight: 600;
+    color: grey!important;
+}
+.nav-bar ul li:hover {
+    font-weight: bold;
+    transition: all linear 0.3s;
+}
+.nav-bar ul a li {
+    line-height: 70px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+/*---- CONTACT PAGE ------------------*/
+.contact-area {
+  padding: 30px;
+  height: 100%;
+}
+
+.contact-area h1 {
+    margin-bottom: 30px;
+}
+.contact-area img {
+    width: 50px;
+    float:left;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.contact-area-content .contact-bar   {
+    float:left;
+    max-width: 600px;
+    padding: 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 6%;
+    border: solid 1px #C8D2D2;
+}
+.contact-area-content .contact-form   {
+    float:left;
+}
+.contact-area-content .contact-form  input {
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+}
+
+/*WELCOME PAGE -------------------*/
+
+.welcome-area {
+    position: relative;
+    margin: 0;
+    /*image from www.dreamstime.com */
+    background: url("images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+
+}
+.welcome-area-content h1  {
+    font-size: 61px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 61px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.welcome-area-content p  {
+    font-size: 21px;
+    margin: 0;
+    font-weight: 100;
+    line-height: 21px;
+}
+.welcome-area-content   {
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    text-align:center;
+    width:100%;
+    font-weight:100;
+    bottom: 90px;
+}
+
+/*HOME PAGE DESCRIPTION AREA*/
+
+.description-area {
+    text-align: center;
+     padding: 30px;
+}
+.description-area-content h1  {
+    font-size: 61px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 61px;
+}
+.description-area-content p  {
+    font-size: 21px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 21px;
+}
+.description-area-content   {
+    font-weight: light;
+    width:100%;
+    font-weight:100;
+    bottom: 90px;
+}
+.signup-form p {
+    font-size: 16px;
+    color: black;
+}
+.signup-form input {
+      width: 200px;
+      height: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color: grey;
+}
+.icon-left {
+    margin-right: 30px;
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+.icon-left path {
+    fill: #3C4646;
+}
+.icon-left circle {
+    fill:#3C4646;
+}
+.description {
+    float: left;
+    width: 50%;
+    max-width: 600px;
+    text-align: left;
+}
+/*ABOUT PAGE-------------------*/
+.about-description {
+    width: 25%;
+    float: left;
+    padding: 30px;
+}
+.map {
+    width: 70%;
+    float:right;
+}
+/*PRODUCTS PAGE -------------------*/
+.cart {
+  float: right;
+  cursor: pointer;
+  margin-right:auto;
+  color: white;
+}
+
+.picture {
+  width: 400px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-section img {
+  width: 100%;
+}
+.product-section {
+  max-width:1320px;
+  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.product-section h1 {
+  text-align: center;
+  margin-bottom: -40px;
+  margin-top:50px;
+}
+.product-section .picture button {
+  font-size: 10px;
+  padding: 5px;
+}

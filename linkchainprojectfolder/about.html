@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Link + Chain</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="nav-bar">
+          <div class="dropdown">
+             <button class="dropbtn"><img class="list-icon" alt="list icon" src="images/list.svg" ></button>
+             <div class="dropdown-content">
+               <a  href="index.html">Home</a>
+               <a href="products.html">Products</a>
+               <a class="selected" href="about.html">About Us</a>
+               <a href="contact.html">Contact</a>
+             </div>
+            </div>
+            <ul>
+              <li >
+                <a href="index.html">
+                 Home
+                 </a>
+              </li>
+              <li>
+                  <a href="products.html">
+                  Products
+                  </a>
+              </li>
+              <li class="selected">
+                <a href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+        </header>
+        <div class="header-filler">
+        </div>
+        <section class="about">
+            <div class="about-description">
+                <h1>About Us</h1>
+                <p>Founded in 2017, Link + Chain is more than a bicycle store - we're dedicated to providing you with the best deals on the highest quality vintage bicycles. We also offer speedy, quality repairs at a competitive price to get you back on the road.</p>
+                <p><body onload="populateDropdown();"></p>
+                  <h2>Services </h2>
+                  <p><select id="myPriceList" onchange="getPriceData();"></select>
+                  <div id="pricing"></div></p>
+                </body>
+                <h2>Location</h2>
+                <p>Link + Chain is located in the heart of Dublin City Centre, steps away from the iconic Ha'penny Bridge. Walk-ins are always welcome, but we suggest ringing ahead to schedule an appointment for repairs. </p><br>
+                <p> <b>Hours:</b> <br> Mon 09:00 - 20:30<br> Tue  09:00 - 20:30<br> Wed 09:00 - 20:30<br> Thur 09:00 - 21:00<br> Fri  09:00 - 20:30<br> Sun 11:00 - 17:30<br> </p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19071.74046092323!2d-6.271601139072142!3d53.34967340742974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8361927b15%3A0x47d5361c712db86f!2sHa&#39;penny+Bridge!5e0!3m2!1sen!2sie!4v1512029482514"  style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <script src="scripts/arrays.js"></script>
+        <script src="scripts/handlerFunctions.js"></script>
+    </body>
+</html>
